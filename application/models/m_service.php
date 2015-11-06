@@ -51,7 +51,7 @@ class m_service extends CI_Model {
 	public function editKegiatan($par)
 	{
 		$this->db->where('id_kegiatan', $par['id_kegiatan']);
-		$data = $this->db->update('kegiatan', $data);
+		$data = $this->db->update('kegiatan', $par);
 		return $data;
 	}
 
